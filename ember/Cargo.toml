@@ -1,0 +1,7 @@
+[package]
+name = "ember"
+version = "0.1.0"
+edition = "2021"
+description = "ASTRA implant module"
+
+[dependencies]
