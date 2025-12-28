@@ -8,6 +8,8 @@ Counter-autonomy red team framework.
 
 Autonomous systems operate on a loop: sense, decide, act. ASTRA provides the methodology and tooling to break each stage of that loop, the transitions between them, and chain findings into operational impact.
 
+Modular by design. Use what you need, extend what you don't.
+
 This isn't data theft. This is systems that move, fly, drive, manufacture. Kinetic consequences.
 
 ---
