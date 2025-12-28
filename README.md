@@ -1,48 +1,64 @@
 # ASTRA
 
-**Adversarial System Testing, Reconnaissance, and Access**
+Counter-autonomy red team framework.
 
-Open-source counter-autonomy red team framework.
+---
 
-## What It Is
+## Overview
 
-ASTRA tests autonomous systems by breaking the SENSE → DECIDE → ACT loop before adversaries do.
+Autonomous systems operate on a loop: sense, decide, act. ASTRA provides the methodology and tooling to break each stage of that loop, the transitions between them, and chain findings into operational impact.
+
+This isn't data theft. This is systems that move, fly, drive, manufacture. Kinetic consequences.
+
+---
 
 ## Architecture
 
-| Module | Language | Purpose |
-|--------|----------|---------|
-| Core | Python | Mission orchestration, policy, logging, playbooks |
-| Specter | Python | Reconnaissance engine |
-| Cinder | Go | C2 backend |
-| Ember | C/Rust | Implant |
-| Acorn | Rust | Payload builder |
-| Dagger | Python | Delivery system |
-| Cloak | Go | OPSEC proxy |
-| Sage | Python | Reporting engine |
-| Hermes | Python | AI assistant |
+| Module | Function |
+|--------|----------|
+| Core | Orchestration, policy, playbooks |
+| Specter | Reconnaissance |
+| Mirage | Perception attacks |
+| Fracture | Decision attacks |
+| Override | Actuation attacks |
+| Sever | Loop disruption |
+| Cinder | C2 |
+| Ember | Implant |
+| Acorn | Payload generation |
+| Dagger | Delivery |
+| Cloak | Infrastructure protection |
+| Sage | Reporting |
+| Hermes | AI advisor |
 
-### Attack Modules
+---
 
-| Module | Phase | Target |
-|--------|-------|--------|
-| Mirage | 2 | Perception attacks |
-| Fracture | 3 | Decision attacks |
-| Override | 4 | Actuation attacks |
-| Sever | 5 | Loop disruption |
+## Methodology
+
+Six phases. Each builds on the last.
+
+1. **Reconnaissance & Mapping** — Understand the loop before attacking it
+2. **Perception Attacks** — Break what the system believes
+3. **Decision Attacks** — Break how it reasons
+4. **Actuation Attacks** — Break what it does
+5. **Loop Disruption** — Break the coherence of the loop itself
+6. **Kill Chain Construction** — Chain findings into operational impact
+
+---
 
 ## Principles
 
-- Methodology-first
-- Operator control
-- Open source
-- Craftsman's apprenticeship, not consumer spoon-feeding
+Methodology over tooling. Operator control. No black boxes.
+
+The framework teaches while it operates.
+
+---
 
 ## Status
 
 In development.
 
+---
+
 ## License
 
-MIT
-
+MIT — Deep Woods Security
