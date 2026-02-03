@@ -86,9 +86,9 @@ ASTRA classifies attack techniques into five categories based on which part of t
 
 ## Who Maintains ASTRA
 
-ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssecurity.com), a counter-UAS offensive cybersecurity company based in Virginia Beach, Virginia.
+ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssec.com), a counter-UAS offensive cybersecurity company based in Virginia Beach, Virginia.
 
-ASTRA is an open methodology. The technique taxonomy is published for the same reason MITRE publishes ATT&CK: a shared language for describing attacks makes the entire community stronger. The specific exploit implementations, tested attack chains, and platform vulnerability data that operationalize ASTRA are maintained separately in the [Deep Woods Sentinel](https://deepwoodssecurity.com) product line.
+ASTRA is an open methodology. The technique taxonomy is published for the same reason MITRE publishes ATT&CK: a shared language for describing attacks makes the entire community stronger. The specific exploit implementations, tested attack chains, and platform vulnerability data that operationalize ASTRA are maintained separately in the [Deep Woods Sentinel](https://deepwoodssec.com) product line.
 
 ---
 

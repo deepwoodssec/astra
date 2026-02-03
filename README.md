@@ -37,7 +37,7 @@ ASTRA is to counter-autonomy what MITRE ATT&CK is to enterprise security.
 
 ## Maintained By
 
-[Deep Woods Security](https://deepwoodssecurity.com) — Counter-UAS Offensive Cybersecurity
+[Deep Woods Security](https://deepwoodssec.com) — Counter-UAS Offensive Cybersecurity
 
 ## License
 
