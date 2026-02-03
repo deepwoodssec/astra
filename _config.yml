@@ -2,24 +2,23 @@ title: "ASTRA Framework"
 description: "Autonomous System Targeting, Reconnaissance & Attack — A Counter-Autonomy Red Team Methodology"
 url: "https://deepwoodssec.github.io"
 baseurl: "/astra"
-remote_theme: just-the-docs/just-the-docs@v0.10.0
+remote_theme: just-the-docs/just-the-docs
 
-# Branding
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 aux_links:
   "Deep Woods Security":
     - "https://deepwoodssecurity.com"
 
 aux_links_new_tab: true
 
-logo: "/astra/assets/images/astra-logo.svg"
-
-# Footer
 footer_content: "&copy; 2026 Deep Woods Security. ASTRA is an open methodology. Use it. Extend it. Cite it."
 
-# Navigation
 nav_sort: case_insensitive
 
-# Search
 search_enabled: true
 search:
   heading_level: 3
@@ -27,19 +26,8 @@ search:
   preview_words_before: 5
   preview_words_after: 10
 
-# Color scheme
 color_scheme: dark
 
-# Collections for methodology phases and techniques
-collections:
-  methodology:
-    output: true
-    permalink: /methodology/:name/
-  techniques:
-    output: true
-    permalink: /techniques/:name/
-
-# Defaults
 defaults:
   - scope:
       path: "docs/methodology"
@@ -52,7 +40,6 @@ defaults:
       layout: default
       parent: "Techniques"
 
-# Exclude from build
 exclude:
   - README.md
   - LICENSE
