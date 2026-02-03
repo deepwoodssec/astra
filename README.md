@@ -1,66 +1,44 @@
-# ASTRA
+# ASTRA Framework
 
-Counter-autonomy red team framework.
+**Autonomous System Targeting, Reconnaissance & Attack**
+
+A six-phase counter-autonomy red team methodology for attacking unmanned and autonomous systems.
+
+📖 **Documentation:** [deepwoodssec.github.io/astra](https://deepwoodssec.github.io/astra)
 
 ---
 
 ## Overview
 
-Autonomous systems operate on a loop: sense, decide, act. ASTRA provides the methodology and tooling to break each stage of that loop, the transitions between them, and chain findings into operational impact.
+ASTRA is a structured methodology for offensive security assessments against autonomous systems. Every autonomous system operates on a **SENSE → DECIDE → ACT** loop. ASTRA provides systematic approaches to attacking each stage of that loop.
 
-Modular by design. Use what you need, extend what you don't.
+ASTRA is to counter-autonomy what MITRE ATT&CK is to enterprise security.
 
-This isn't data theft. This is systems that move, fly, drive, manufacture. Kinetic consequences.
+## Phases
 
----
+| Phase | Name | Function |
+|-------|------|----------|
+| A | Detection | Discover and characterize target emissions |
+| B | Identification | Identify platform type, firmware, protocols |
+| C | Tracking | Maintain positional awareness of target |
+| D | Decision | Map failsafe logic, select countermeasure |
+| E | Engagement | Execute attack chain |
+| F | Exploitation | Extract forensic intelligence |
 
-## Architecture
+## Technique Categories
 
-| Module | Function |
-|--------|----------|
-| Core | Orchestration, policy, playbooks |
-| Specter | Reconnaissance |
-| Mirage | Perception attacks |
-| Fracture | Decision attacks |
-| Override | Actuation attacks |
-| Sever | Loop disruption |
-| Cinder | C2 |
-| Ember | Implant |
-| Acorn | Payload generation |
-| Dagger | Delivery |
-| Cloak | Infrastructure protection |
-| Sage | Reporting |
-| Hermes | AI advisor |
+| Category | Target | Description |
+|----------|--------|-------------|
+| Specter | SENSE | Passive reconnaissance and platform fingerprinting |
+| Mirage | SENSE | Active sensor deception (GPS spoofing, sensor blinding) |
+| Fracture | DECIDE | Decision logic corruption (failsafe manipulation, swarm poisoning) |
+| Override | ACT | Direct command injection (flight controller exploitation) |
+| Sever | Loop | Timing disruption (desynchronization, latency injection) |
 
----
+## Maintained By
 
-## Methodology
-
-Six phases. Each builds on the last.
-
-1. **Reconnaissance & Mapping** — Understand the loop before attacking it
-2. **Perception Attacks** — Break what the system believes
-3. **Decision Attacks** — Break how it reasons
-4. **Actuation Attacks** — Break what it does
-5. **Loop Disruption** — Break the coherence of the loop itself
-6. **Kill Chain Construction** — Chain findings into operational impact
-
----
-
-## Principles
-
-Methodology over tooling. Operator control. No black boxes.
-
-The framework teaches while it operates.
-
----
-
-## Status
-
-In development.
-
----
+[Deep Woods Security](https://deepwoodssecurity.com) — Counter-UAS Offensive Cybersecurity
 
 ## License
 
-MIT — Deep Woods Security
+MIT License. See [LICENSE](LICENSE) for details.

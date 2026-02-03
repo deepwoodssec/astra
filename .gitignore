@@ -1,46 +1,11 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-.env
-*.egg-info/
-dist/
-build/
-
-# Go
-bin/
-*.exe
-*.exe~
-*.dll
-*.dylib
-
-# Rust
-target/
-Cargo.lock
-
-# C/C++
-*.o
-*.a
-*.so
-*.dylib
-*.out
-
-# IDE
-.vscode/
-.idea/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+.DS_Store
 *.swp
 *.swo
 *~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Project specific
-lab/learning/
-*.log
-*.tmp
