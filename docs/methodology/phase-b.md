@@ -80,4 +80,3 @@ Each level narrows the database search space. Level 1 alone is insufficient for 
 
 ---
 
-*"To name a thing is to have power over it. To name it precisely is to know where it is vulnerable."*

@@ -89,4 +89,3 @@ Mirage is not eliminated until all sensor modalities are authenticated and cross
 
 ---
 
-*"The mirage does not fight the desert. It offers a different truth, and the traveler follows."*

@@ -143,4 +143,3 @@ ASTRA is designed for this. Fracture and Sever — the categories that survive h
 
 ---
 
-*"The master does not prepare for the fight he had last season. He prepares for the fight he will have next."*

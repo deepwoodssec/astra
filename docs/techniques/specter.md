@@ -86,5 +86,3 @@ During Phase E, Specter closes the observation loop:
 Without Specter during engagement, the operator has no feedback. Specter tells you whether it's working.
 
 ---
-
-*"The wolf watches the camp all night. Not to attack — to know."*

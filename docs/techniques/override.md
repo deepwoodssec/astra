@@ -93,5 +93,3 @@ ESCs accept PWM or digital protocol commands directly. If signals can be injecte
 Override is the first category to fail as the adversary hardens. At Tier 1, Override requires cryptographic bypass. This is why ASTRA maintains Mirage, Fracture, and Sever as parallel paths.
 
 ---
-
-*"The open gate is the most dangerous trap. The unlocked protocol is the most rewarding one."*

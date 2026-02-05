@@ -102,5 +102,3 @@ This is a design constraint, not a technical limitation.
 | Engagement feasibility | Go / conditional / no-go | Operator decision |
 
 ---
-
-*"The general who wins the battle makes many calculations before the battle is fought." — Sun Tzu*
