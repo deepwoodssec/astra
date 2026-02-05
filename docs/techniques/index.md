@@ -3,7 +3,6 @@ layout: default
 title: Techniques
 nav_order: 3
 has_children: true
-permalink: /docs/techniques/
 ---
 
 # ASTRA Technique Categories
