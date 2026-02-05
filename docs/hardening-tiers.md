@@ -140,6 +140,3 @@ Real-world platforms may be mixed (Tier 1 comms, Tier 0 GPS). Phase D evaluates 
 The threat landscape is Tier 0 today. GPS authentication is deploying. Protocol signing is becoming standard. Multi-sensor navigation is commoditizing. The trajectory moves toward Tier 2 over the next 5-10 years.
 
 ASTRA is designed for this. Fracture and Sever — the categories that survive hardening — exploit decision logic complexity and physical constraints that cannot be patched. Building expertise in these now creates capability that remains viable as the adversary hardens.
-
----
-

@@ -103,5 +103,3 @@ Phase E → feeds → Phase F (post-engagement)
 
 Phase F wraps around the engagement cycle. It provides the intelligence that enables engagement and extracts the intelligence that engagement makes possible. A common misreading of kill chain models is that the last phase happens last. In ASTRA, Phase F's pre-engagement mode is a prerequisite for Phase D.
 
----
-

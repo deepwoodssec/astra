@@ -101,6 +101,3 @@ Introduce timing offsets between platforms. If platform A is at T+0 and platform
 | Byzantine fault tolerance | Requires corrupting N+1 peers |
 
 Fracture remains viable at higher hardening tiers than Override because decision logic complexity creates a larger attack surface than communication protocol security. Even authenticated, encrypted systems must still make decisions — and those decisions have exploitable logic.
-
----
-

@@ -86,6 +86,3 @@ Strong localized magnetic fields corrupt compass readings, causing heading error
 | Anti-spoofing firmware (jump detection) | Requires gradual ramp, power matching |
 
 Mirage is not eliminated until all sensor modalities are authenticated and cross-checked.
-
----
-

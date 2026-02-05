@@ -105,6 +105,3 @@ Forward-positioned capability. Current single-platform targets do not require ti
 | Redundant power | Requires exhausting multiple systems |
 
 Sever is the most durable active category because it exploits physics rather than protocol weaknesses. You can encrypt a communication link. You cannot encrypt a battery.
-
----
-

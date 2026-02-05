@@ -89,6 +89,3 @@ This data updates `exploit_chains` and `engagements` tables, improving Phase D a
 | Target final state | Position, flight mode, status | Phase F post-engagement |
 | Measured effectiveness | Updated success rates | Database |
 | Engagement timeline | Timestamped log | After-action report |
-
----
-

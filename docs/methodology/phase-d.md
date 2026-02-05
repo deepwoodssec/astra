@@ -100,5 +100,3 @@ This is a design constraint, not a technical limitation.
 | Per-countermeasure success estimate | Probability | Phase E go/no-go |
 | Required equipment and parameters | Configuration data | Phase E setup |
 | Engagement feasibility | Go / conditional / no-go | Operator decision |
-
----

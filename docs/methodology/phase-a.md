@@ -73,5 +73,4 @@ Optical and thermal imaging provide detection at ranges limited by sensor resolu
 
 Phase A is where Specter techniques are first employed. But Specter is not confined to Phase A — it runs continuously, providing updated intelligence even during engagement. Phase A is the first application. Specter is the persistent thread.
 
----
 

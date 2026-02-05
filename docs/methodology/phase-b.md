@@ -78,5 +78,3 @@ Each level narrows the database search space. Level 1 alone is insufficient for 
 | MAVLink telemetry decode (if available) | PCAP, decoded fields | Phase D failsafe analysis |
 | RF fingerprint record | Feature vector | Classification library update |
 
----
-

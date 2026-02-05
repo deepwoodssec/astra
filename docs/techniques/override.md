@@ -91,5 +91,3 @@ ESCs accept PWM or digital protocol commands directly. If signals can be injecte
 | Command rate limiting | Flood-style injection throttled |
 
 Override is the first category to fail as the adversary hardens. At Tier 1, Override requires cryptographic bypass. This is why ASTRA maintains Mirage, Fracture, and Sever as parallel paths.
-
----

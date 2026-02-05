@@ -69,6 +69,3 @@ A Kalman filter or equivalent tracker fuses these inputs, weighting by confidenc
 | Platform velocity and heading | Vector | Phase E lead computation |
 | Track quality / confidence | Metric | Phase D engagement feasibility |
 | Tracking method(s) active | Status flags | Phase D method selection |
-
----
-

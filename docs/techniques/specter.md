@@ -84,5 +84,3 @@ During Phase E, Specter closes the observation loop:
 | Resource exhaustion → battery drain | Telemetry shows voltage drop rate |
 
 Without Specter during engagement, the operator has no feedback. Specter tells you whether it's working.
-
----
