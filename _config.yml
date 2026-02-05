@@ -26,18 +26,6 @@ search:
 
 color_scheme: dark
 
-defaults:
-  - scope:
-      path: "docs/methodology"
-    values:
-      layout: default
-      parent: "Methodology"
-  - scope:
-      path: "docs/techniques"
-    values:
-      layout: default
-      parent: "Techniques"
-
 exclude:
   - README.md
   - LICENSE
