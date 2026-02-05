@@ -75,4 +75,3 @@ Phase A is where Specter techniques are first employed. But Specter is not confi
 
 ---
 
-*"The owl does not announce itself. It listens first, and the forest tells it everything."*

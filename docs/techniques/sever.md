@@ -108,4 +108,3 @@ Sever is the most durable active category because it exploits physics rather tha
 
 ---
 
-*"The river does not attack the stone. It surrounds it, and the stone diminishes."*

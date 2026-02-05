@@ -103,7 +103,7 @@ The threat landscape is moving from Tier 0 toward Tier 2. ASTRA is designed for 
 
 ## Who Maintains ASTRA
 
-ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssec.com), a boutique offensive security firm based in Virginia Beach. Deep Woods specializes in penetration testing, red team operations, and AI security for organizations where failure isn't an option.
+ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssec.com), a boutique offensive security firm based in Virginia Beach. 
 
 ASTRA is an open methodology. The technique taxonomy is published for the same reason MITRE publishes ATT&CK: a shared language for describing attacks makes the entire community stronger. The specific exploit implementations, tested attack chains, and platform vulnerability data that operationalize ASTRA are maintained separately in the [Deep Woods Sentinel](https://deepwoodssec.com) product line.
 

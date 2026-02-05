@@ -72,4 +72,3 @@ A Kalman filter or equivalent tracker fuses these inputs, weighting by confidenc
 
 ---
 
-*"You do not chase the river. You learn where it flows, and you wait there."*

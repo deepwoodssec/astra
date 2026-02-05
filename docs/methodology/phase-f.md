@@ -105,4 +105,3 @@ Phase F wraps around the engagement cycle. It provides the intelligence that ena
 
 ---
 
-*"To know the enemy, first sit with it in silence. The teardown is the silence. The exploit chain is the word that follows."*

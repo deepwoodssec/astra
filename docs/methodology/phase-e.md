@@ -92,4 +92,3 @@ This data updates `exploit_chains` and `engagements` tables, improving Phase D a
 
 ---
 
-*"The arrow is released. Its path was decided long before the string was drawn."*

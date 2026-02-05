@@ -104,4 +104,3 @@ Fracture remains viable at higher hardening tiers than Override because decision
 
 ---
 
-*"You do not break the dam. You move the river, and the dam breaks itself."*
