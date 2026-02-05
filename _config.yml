@@ -11,10 +11,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-aux_links:
-  "Deep Woods Security":
-    - "https://deepwoodssec.com"
-
 aux_links_new_tab: true
 
 footer_content: "&copy; 2026 Deep Woods Security. ASTRA is an open methodology. Use it. Extend it. Cite it."
@@ -48,3 +44,6 @@ exclude:
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
+
+nav_fold: true
+ 
