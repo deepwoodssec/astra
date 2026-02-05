@@ -9,76 +9,47 @@ permalink: /docs/methodology/
 # ASTRA Methodology
 {: .fs-8 }
 
-Six phases. One kill chain. From first detection to forensic exploitation.
+Six phases. Sequential with one exception.
 {: .fs-5 .fw-300 }
 
 ---
 
-## Structure
+## Phase Sequence
 
-An ASTRA engagement follows six sequential phases. Each phase builds on the output of the previous one. Skipping phases creates blind spots. The methodology is designed to be executed in order, though mature operators may compress or parallelize phases based on prior intelligence.
+Phases A through E are sequential — each produces intelligence that the next phase requires. Phase F is non-linear. It operates in two modes that wrap around the engagement cycle:
 
 ```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Phase A     │───▶│  Phase B     │───▶│  Phase C     │
-│  DETECTION   │    │  IDENTIFY    │    │  TRACKING    │
-│              │    │              │    │              │
-│  Find it     │    │  Know it     │    │  Follow it   │
-└─────────────┘    └─────────────┘    └─────────────┘
-       │                  │                  │
-       ▼                  ▼                  ▼
-   RF, radar,        Protocol,          Direction-
-   acoustic,         firmware,          finding,
-   visual/IR         version ID         triangulation
-                                             │
-                                             ▼
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Phase F     │◀───│  Phase E     │◀───│  Phase D     │
-│  EXPLOIT     │    │  ENGAGEMENT  │    │  DECISION    │
-│              │    │              │    │              │
-│  Learn it    │    │  Break it    │    │  Choose how  │
-└─────────────┘    └─────────────┘    └─────────────┘
-       │                  │                  │
-       ▼                  ▼                  ▼
-   Firmware          GPS spoof,         Failsafe map,
-   extraction,       MAVLink inject,    countermeasure
-   forensics,        RF denial,         selection,
-   attribution       power drain        decision engine
+F (pre-engagement) → informs → D (decision) → E (engagement)
+                                                     ↓
+                                              F (post-engagement)
 ```
 
-## Phase Summary
+- **Pre-engagement intelligence** (Phase F, Mode 1): Firmware extraction, reverse engineering, vulnerability discovery. This must be completed before Phase D can produce reliable countermeasure recommendations.
+- **Post-engagement forensics** (Phase F, Mode 2): Mission log recovery, component attribution, operational intelligence. This follows Phase E when a platform is recovered.
 
-| Phase | Name | Input | Output | SENSE→DECIDE→ACT Target |
-|:------|:-----|:------|:-------|:------------------------|
-| **A** | [Detection](/astra/docs/methodology/phase-a/) | Operational environment | RF/radar/acoustic/visual signatures | Observing the SENSE stage |
-| **B** | [Identification](/astra/docs/methodology/phase-b/) | Raw signatures from Phase A | Platform ID, firmware version, protocol stack | Decoding the SENSE stage |
-| **C** | [Tracking](/astra/docs/methodology/phase-c/) | Identified platform from Phase B | Continuous position track | Predicting the ACT stage |
-| **D** | [Decision](/astra/docs/methodology/phase-d/) | Platform ID + behavior model from B/C | Selected countermeasure and attack chain | Modeling the DECIDE stage |
-| **E** | [Engagement](/astra/docs/methodology/phase-e/) | Attack chain from Phase D + track from Phase C | Neutralized or redirected platform | Attacking SENSE, DECIDE, or ACT |
-| **F** | [Exploitation](/astra/docs/methodology/phase-f/) | Captured/recovered platform from Phase E | Forensic intelligence, attribution data | Post-mortem of all stages |
+Specter (continuous passive collection) runs across all phases as a persistent thread — not just during Phase A.
+
+---
+
+## Phases
+
+| Phase | Name | Output | Feeds |
+|:------|:-----|:-------|:------|
+| **A** | [Detection](/astra/docs/methodology/phase-a/) | RF, acoustic, radar signatures | Phase B classification |
+| **B** | [Identification](/astra/docs/methodology/phase-b/) | Platform type, firmware version, protocol stack | Phase C tracking parameters, Phase D vulnerability profile |
+| **C** | [Tracking](/astra/docs/methodology/phase-c/) | Position, bearing, velocity estimates | Phase E targeting data |
+| **D** | [Decision](/astra/docs/methodology/phase-d/) | Ranked countermeasure list with success probability | Phase E engagement plan |
+| **E** | [Engagement](/astra/docs/methodology/phase-e/) | Countermeasure execution, measured results | Database update, Phase F post-engagement |
+| **F** | [Exploitation](/astra/docs/methodology/phase-f/) | Pre: vulnerability intelligence. Post: attribution data | Pre feeds D and E. Post feeds intelligence analysis |
+
+---
 
 ## Relationship to Technique Categories
 
-Phases describe **when**. Technique categories describe **what**.
+The six phases describe **when** and **in what order**. The five technique categories (Specter, Mirage, Fracture, Override, Sever) describe **what kind of action**. They are orthogonal:
 
-A Phase E engagement might employ a **Mirage** technique (GPS spoofing) followed by an **Override** technique (MAVLink command injection). The phase is the operational stage. The technique category classifies the specific attack used within that stage.
+- Phase A (Detection) primarily employs **Specter** techniques
+- Phase E (Engagement) employs **Mirage**, **Fracture**, **Override**, or **Sever** depending on the target
+- **Specter** runs continuously across all phases — it provides real-time feedback during engagement and maintains environmental awareness between engagements
 
-## Reporting
-
-ASTRA-structured reports follow the phase sequence. Each section of the report maps to a phase, with findings categorized by technique. This standardizes deliverables across engagements and enables cross-platform comparison of vulnerability profiles.
-
-```
-ASTRA Engagement Report
-├── Phase A: Detection Results
-│   └── RF emissions, radar cross-section, acoustic profile
-├── Phase B: Identification Results
-│   └── Platform ID, firmware version, protocol analysis
-├── Phase C: Tracking Assessment
-│   └── Effective tracking range, modality comparison
-├── Phase D: Countermeasure Selection
-│   └── Failsafe logic map, recommended attack chains
-├── Phase E: Engagement Results
-│   └── Technique execution, success/failure, conditions
-└── Phase F: Exploitation/Forensics
-    └── Firmware analysis, mission logs, attribution
-```
+The phases are a timeline. The technique categories are a toolbox. Phase D selects from the toolbox based on what the timeline has revealed.

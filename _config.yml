@@ -1,8 +1,10 @@
 title: "ASTRA Framework"
-description: "Autonomous System Targeting, Reconnaissance & Attack — A Counter-Autonomy Red Team Methodology"
+description: "Autonomous System Targeting, Reconnaissance and Attack — A Counter-Autonomy Red Team Methodology"
 url: "https://deepwoodssec.github.io"
 baseurl: "/astra"
 remote_theme: just-the-docs/just-the-docs
+
+logo: "/assets/images/logo.svg"
 
 plugins:
   - jekyll-remote-theme

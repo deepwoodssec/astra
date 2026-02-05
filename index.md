@@ -8,7 +8,7 @@ permalink: /
 # ASTRA Framework
 {: .fs-9 }
 
-Autonomous System Targeting, Reconnaissance & Attack
+Autonomous System Targeting, Reconnaissance and Attack
 {: .fs-6 .fw-300 }
 
 A six-phase counter-autonomy red team methodology for attacking unmanned and autonomous systems.
@@ -57,7 +57,7 @@ The loop is only as strong as its weakest stage. ASTRA finds the weakest stage a
 
 ## Six Phases
 
-ASTRA structures counter-autonomy engagements into six sequential phases:
+ASTRA structures counter-autonomy engagements into six phases. Phases A through E are sequential. Phase F is non-linear — it operates in two modes that bookend the engagement cycle.
 
 | Phase | Name | Function |
 |:------|:-----|:---------|
@@ -66,27 +66,44 @@ ASTRA structures counter-autonomy engagements into six sequential phases:
 | **C** | [Tracking](/astra/docs/methodology/phase-c/) | Maintain continuous positional awareness of the target |
 | **D** | [Decision](/astra/docs/methodology/phase-d/) | Map failsafe logic and select optimal countermeasure |
 | **E** | [Engagement](/astra/docs/methodology/phase-e/) | Execute the attack chain against the target |
-| **F** | [Exploitation](/astra/docs/methodology/phase-f/) | Extract forensic intelligence from captured platforms |
+| **F** | [Exploitation](/astra/docs/methodology/phase-f/) | Extract intelligence before engagement (vulnerability research) and after engagement (forensics and attribution) |
+
+Phase F pre-engagement intelligence (firmware extraction, reverse engineering, vulnerability discovery) feeds Phase D and Phase E. Phase F post-engagement forensics (mission log recovery, component attribution) follows Phase E. The framework is a cycle, not a straight line.
 
 ---
 
 ## Five Technique Categories
 
-ASTRA classifies attack techniques into five categories based on which part of the SENSE → DECIDE → ACT loop they target:
+ASTRA classifies attack techniques into five categories. Four are active — they change the target's state. One is persistent — it collects intelligence continuously without affecting the target.
 
 | Category | Target | Description |
 |:---------|:-------|:------------|
-| [**Specter**](/astra/docs/techniques/specter/) | SENSE | Passive reconnaissance — fingerprint emissions, classify platforms, enumerate the loop |
-| [**Mirage**](/astra/docs/techniques/mirage/) | SENSE | Active deception — spoof GPS, blind sensors, inject false environmental data |
-| [**Fracture**](/astra/docs/techniques/fracture/) | DECIDE | Decision corruption — manipulate failsafe thresholds, poison swarm logic, trigger unintended state transitions |
-| [**Override**](/astra/docs/techniques/override/) | ACT | Command injection — send direct commands to flight controllers, bypass motor safeties, force landing or redirect |
-| [**Sever**](/astra/docs/techniques/sever/) | Loop Coherence | Timing disruption — desynchronize the SENSE→DECIDE→ACT pipeline, break swarm coordination, inject latency |
+| [**Specter**](/astra/docs/techniques/specter/) | Continuous collection | Persistent passive intelligence — RF fingerprinting, protocol decoding, behavioral observation. Runs across all phases, not just reconnaissance |
+| [**Mirage**](/astra/docs/techniques/mirage/) | SENSE loop | Active deception — spoof GPS, blind sensors, inject false environmental data |
+| [**Fracture**](/astra/docs/techniques/fracture/) | DECIDE loop | Decision corruption — manipulate failsafe thresholds, trigger unintended state transitions, poison swarm logic |
+| [**Override**](/astra/docs/techniques/override/) | ACT loop | Command injection — send direct commands to flight controllers, bypass motor safeties, force landing or redirect |
+| [**Sever**](/astra/docs/techniques/sever/) | Loop continuity | Operational disruption — exhaust finite resources, deny communications, desynchronize coordinated operations |
+
+---
+
+## Adversary Hardening Tiers
+
+ASTRA techniques do not apply uniformly across all targets. The [hardening tier classification](/astra/docs/hardening-tiers/) maps target sophistication to technique viability.
+
+| Tier | Classification | Technique Viability |
+|:-----|:--------------|:-------------------|
+| **0** | COTS Unmodified | All categories viable — the current baseline threat |
+| **1** | Protocol-Hardened | Override requires bypass; Mirage, Fracture, Sever remain viable |
+| **2** | Sensor-Hardened | Mirage requires sophistication; Fracture and Sever become primary |
+| **3** | Full-Stack Hardened | Novel zero-day or physical-layer attacks only |
+
+The threat landscape is moving from Tier 0 toward Tier 2. ASTRA is designed for this trajectory. The technique categories that survive hardening — Fracture and Sever — exploit decision logic complexity and physical constraints that cannot be patched away.
 
 ---
 
 ## Who Maintains ASTRA
 
-ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssec.com), a counter-UAS offensive cybersecurity company based in Virginia Beach, Virginia.
+ASTRA is developed and maintained by [Deep Woods Security](https://deepwoodssec.com), a boutique offensive security firm based in Virginia Beach. Deep Woods specializes in penetration testing, red team operations, and AI security for organizations where failure isn't an option.
 
 ASTRA is an open methodology. The technique taxonomy is published for the same reason MITRE publishes ATT&CK: a shared language for describing attacks makes the entire community stronger. The specific exploit implementations, tested attack chains, and platform vulnerability data that operationalize ASTRA are maintained separately in the [Deep Woods Sentinel](https://deepwoodssec.com) product line.
 
@@ -98,4 +115,4 @@ ASTRA is released under the [MIT License](https://github.com/deepwoodssec/astra/
 
 When referencing ASTRA in publications or reports:
 
-> Deep Woods Security. *ASTRA: Autonomous System Targeting, Reconnaissance & Attack Framework.* 2026. https://deepwoodssec.github.io/astra
+> Deep Woods Security. *ASTRA: Autonomous System Targeting, Reconnaissance and Attack Framework.* 2026. https://deepwoodssec.github.io/astra
